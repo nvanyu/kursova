@@ -1,0 +1,76 @@
+<html lang="ua">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Запис на прийом</title>
+  <link rel="stylesheet" href="assets/styleform.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="main">
+  <div class="container">
+    <h1>Запис на прийом</h1>
+    <form action="#" method="post">
+      <label for="name">Ім'я:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Телефон:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="service">Виберіть послугу:</label>
+      <select id="service" name="service" required>
+        <option value="regular-checkup">Звичайний огляд</option>
+        <option value="cleaning">Чистка зубів</option>
+        <option value="filling">Пломбування</option>
+        <option value="filling">Інше</option>
+        
+      </select>
+      <label for="name">Коментар:</label>
+      <input type="text" id="text" name="text" required>
+
+
+      <label for="date">Дата та час:</label>
+      <input type="datetime-local" id="date" name="date" required max="9999-12-31T23:59">
+
+      <button class="button" onclick="showPopup()">Записатися</button>
+      <button class="button2" onclick="redirectToIndex()">На головну сторінку</button>
+    </form>
+
+
+<div id="popup" class="popup">
+    <p>Ваша заявка була успішно відправлена!</p>
+    <button class="button" onclick="redirectToIndex()">Повернутися на головну сторінку</button>
+  </div>
+
+  <script>
+    function showPopup() {
+      document.getElementById('popup').style.display = 'block';
+    }
+
+    function hidePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+    function redirectToIndex() {
+        window.location.href = 'index.html';
+    }
+  </script>
+    </div>
+  </div>
+     <footer>
+      <div class="footer">
+        <p>Контактна інформація: ruchynskyi_n@gmail.com</p>
+       <p>Авторські права &copy; 2023</p>
+      </div>
+  </footer>
+
+</body>
+</html>

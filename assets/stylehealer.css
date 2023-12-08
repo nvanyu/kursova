@@ -1,0 +1,174 @@
+
+html,body {
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fdf3ec;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+.container{
+  margin-left: 3em; 
+  }
+    .content {
+        margin: 20px auto; 
+        max-width: 800px; 
+}
+  
+  .header{
+    background-color: rgb(253, 237, 224);
+    /* border: solid 1px black;; */
+}
+.main {
+    flex: 1;
+  }
+.header-line{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.h-logo img{
+  margin: 10px 0 0 0 ;
+  width: 5em;
+  height: 5em;
+}
+
+.header-item{
+  text-decoration: none;
+  color: #c89066;
+  font-weight: 500;
+  font-size: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-right: 1px solid #996666;
+  padding-right: 6px;
+  border-left: 1px solid #996666;
+  padding-left: 7px;
+  transition: 
+    background 1s;
+
+  /* border:  0.5px solid #c89066; */
+}
+
+.header-item:hover{
+  background: #ffd0ad;
+}
+
+.s-header-nav img{
+  /* margin: 8px 0 0 0 ; */
+  width: 1.2em;
+  height: 1.2em;
+
+}
+.button{
+  text-decoration: none;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  padding: 20px 20px;
+  font-weight: 800;
+  background-color: #996666;
+  color: #fff;
+  opacity: 1;
+  transition: 
+    background-color 0.6s,
+    color 0.6s;
+
+}
+
+.button:hover{
+  background-color: #ffd0ad;
+  color: #996666 ;
+}
+.phone, .schedule, .adress{
+  padding: 3px;
+}
+
+.s-header-nav{
+  font-family: 'Raleway', monospace;
+  font-weight: 550;
+  border-left: 1px solid #996666;
+  padding-left: 7px;
+  margin-left: 10%;
+  /* padding-top: 5px; */
+  /* float: left; */
+  
+}
+
+.s-header-nav a{
+  text-decoration: none;
+
+}
+
+
+.content {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+  flex-wrap: wrap;
+}
+
+.doctor {
+  /* padding: 20px; */
+  background-color: rgb(253, 237, 224);
+  border-radius: 1em;
+  width: 100%;
+  height: 100%;
+  margin: 1em;
+  padding: 1em;
+}
+
+.doctor img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+     margin-left: 0;
+}
+.footer{
+    left: 0; bottom: 0; 
+    padding: 10px;
+    background: #996666;
+    color: #fff; 
+ 
+}
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #996666 #fff0f0;
+  }
+  
+  *::-webkit-scrollbar {
+    width: 14px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #fff0f0;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #a46a6a;
+    
+  
+  }
+  .d1{
+   
+    /* padding: 3em; */
+    /* margin: 1em; */
+    /* width: 50%; */
+
+  }
+
+#docpic{
+  float: left;
+}
+p{
+  font-family: 'Raleway', monospace;
+}
